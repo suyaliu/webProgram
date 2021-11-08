@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>WLD Company</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="js/index.js"></script>
+
+</head>
+<body>
+
+    <!--#########################nava bar#########################################-->
+ <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!--logo-->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+              </button>
+             
+              <a class="navbar-brand "  href="index.html" style="color: red;"> LWD STORE </a>
+         </div>
+         <!--nav bar with dropdown-->
+         <div class="collapse navbar-collapse" id="myNavbar">
+        
+          <ul class="nav navbar-nav" >
+            <li class="active"><a href="index.html">Home</a></li>
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="categroy.html">Catalogue <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="catalogue.html">Women</a></li>
+                <li><a href="catalogue.html">Men</a></li>
+                <li><a href="catalogue.html">Kids</a></li>
+              </ul>
+            </li>
+            <li class=""><a href="catalogue.html">Sale</a></li>
+          </ul>
+           <!--sing in sign up-->
+           
+            <ul class="nav navbar-nav navbar-right">
+           <li><a href="cart.html"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
+           <li><a href="signin.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+           <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+             </ul>
+          <!--search icon-->
+           <form class="navbar-form navbar-right" action="catalogue.html">
+             <div class="input-group">
+              <a href="#"> <input type="text" class="form-control" placeholder="Search" id="search_text"></a>
+               <div class="input-group-btn">
+                <button  class="btn btn-default" type="submit" onclick="search_button_click()">
+                  <i class="glyphicon glyphicon-search"></i>
+                 </button>
+                </div>
+                </div>
+              </form>     
+         </div>
+        </div>
+     </nav>
+    
+     <!-- section here-->                                
+ <!--#################################Carousel#####################################-->              
+ <div class="container">
+  
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="image/W21-FEB-1120121-LNYHERO.jpg" alt="Los Angeles" style="width:100%;">
+      </div>
+
+      <div class="item">
+        <img src="image/gift for you.jpg" alt="Chicago" style="width:100%; height: 600px;">
+      </div>
+    
+      <div class="item">
+        <img src="image/3picture.jpg" alt="New york" style="width:100%; height: 600px;">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>><br>
+     
+<hr>
+<!--footer2-->
+<div class=" text-center " style="margin-bottom: 30px;">@author:Suya Liu  & Wen Tao</div>
+
+</body>
+</html>

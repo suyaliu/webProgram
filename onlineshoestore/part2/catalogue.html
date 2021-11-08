@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>WLD Company</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="js/catalogue.js" defer></script>
+
+</head>
+
+<body>
+
+  <!--#########################nava bar#########################################-->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <!--logo-->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+          </button>
+         
+          <a class="navbar-brand "  href="index.html" style="color: red;"> LWD STORE </a>
+     </div>
+     <!--nav bar with dropdown-->
+     <div class="collapse navbar-collapse" id="myNavbar">
+    
+          <ul class="nav navbar-nav" >
+            <li class=""><a href="index.html">Home</a></li>
+            <li class="dropdown active"><a class="dropdown-toggle" data-toggle="dropdown" href="categroy.html">Catalogue <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="catalogue.html">Women</a></li>
+                <li><a href="catalogue.html">Men</a></li>
+                <li><a href="catalogue.html">Kids</a></li>
+              </ul>
+            </li>
+            <li class=""><a href="catalogue.html">Sale</a></li>
+          </ul>
+       <!--sing in sign up-->
+       
+        <ul class="nav navbar-nav navbar-right">
+       <li><a href="cart.html"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
+       <li><a href="signin.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+       <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+         </ul>
+      <!--search icon-->
+       <form class="navbar-form navbar-right" action="catalogue.html">
+         <div class="input-group">
+          <a href="#"> <input type="text" class="form-control" placeholder="Search" id="search_text2"></a>
+           <div class="input-group-btn">
+            <button  class="btn btn-default" type="submit" onclick="search_button_click2()">
+              <i class="glyphicon glyphicon-search"></i>
+             </button>
+            </div>
+            </div>
+          </form>     
+     </div>
+    </div>
+ </nav><br><br><br>
+
+  <!-- section here-->
+  <nav class="navbar navbar-inverse visible-xs ">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-tar></button>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Category</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">XXXX</a></li>
+          <li><a href="#">Age</a></li>
+          <li><a href="#">Gender</a></li>
+          <li><a href="#">Geo</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav><br>
+
+<div class="container-fluid">
+  <div class="row content">
+
+      <div class="col-sm-3 sidenav hidden-xs">
+
+
+        <!--###########################Price#####################################-->
+        <h4 class="font-weight-bold mb-3">Filter by Price</h4>
+        <div id="filter_by_price">
+        <div class="form-check pl-0 mb-3 ml-3">
+          <input type="radio" class="form-check-input" id="under25" name="materialExampleRadios">
+          <label class="form-check-label  text-uppercase card-link-secondary" for="under25">Under $25</label>
+        </div>
+        <div class="form-check pl-0 mb-3">
+          <input type="radio" class="form-check-input" id="2550" name="materialExampleRadios">
+          <label class="form-check-label  text-uppercase card-link-secondary" for="2550">$25 to $50</label>
+        </div>
+        <div class="form-check pl-0 mb-3">
+          <input type="radio" class="form-check-input" id="50100" name="materialExampleRadios">
+          <label class="form-check-label  text-uppercase card-link-secondary" for="50100">$50 to $100</label>
+        </div>
+        <div class="form-check pl-0 mb-3">
+          <input type="radio" class="form-check-input" id="100200" name="materialExampleRadios">
+          <label class="form-check-label  text-uppercase card-link-secondary" for="100200">$100 to $200</label>
+        </div>
+        <div class="form-check pl-0 mb-3">
+          <input type="radio" class="form-check-input" id="200above" name="materialExampleRadios">
+          <label class="form-check-label  text-uppercase card-link-secondary" for="200above">$200 & Above</label>
+        </div>
+      </div>
+        
+        <!--###########################rating star#####################################-->
+        <h4>Avg. Customer Review</h4>
+
+        <ul class="rating">
+          <span class="glyphicon glyphicon-star"></span>
+          <span class="glyphicon glyphicon-star"></span>
+          <span class="glyphicon glyphicon-star"></span>
+          <span class="glyphicon glyphicon-star"></span>
+          <span class="glyphicon glyphicon-star-empty"></span>
+          <p class="small text-uppercase card-link-secondary px-2">& Up</p>
+        </ul>
+        <ul class="rating">
+          <span class="glyphicon glyphicon-star"></span>
+          <span class="glyphicon glyphicon-star"></span>
+          <span class="glyphicon glyphicon-star"></span>
+          <span class="glyphicon glyphicon-star-empty"></span>
+          <span class="glyphicon glyphicon-star-empty"></span>
+          <p class="small text-uppercase card-link-secondary px-2">& Up</p>
+        </ul>
+        <ul class="rating">
+          <span class="glyphicon glyphicon-star"></span>
+          <span class="glyphicon glyphicon-star"></span>
+          <span class="glyphicon glyphicon-star-empty"></span>
+          <span class="glyphicon glyphicon-star-empty"></span>
+          <span class="glyphicon glyphicon-star-empty"></span>
+          <p class="small text-uppercase card-link-secondary px-2">& Up</p>
+        </ul>
+        <ul class="rating">
+          <span class="glyphicon glyphicon-star"></span>
+          <span class="glyphicon glyphicon-star-empty"></span>
+          <span class="glyphicon glyphicon-star-empty"></span>
+          <span class="glyphicon glyphicon-star-empty"></span>
+          <span class="glyphicon glyphicon-star-empty"></span>
+          <p class="small text-uppercase card-link-secondary px-2">& Up</p>
+        </ul><br>
+
+        <!--################################Size##########################################################-->
+        
+        <h4 class="font-weight-bold mb-3">Size</h4>
+        <div class="checkbox ">
+          <label><input type="checkbox" value="5">34</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" value="5">36</label>
+        </div>
+        <div class="checkbox disabled">
+          <label><input type="checkbox" value="5">38</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" value="5">More</label>
+        
+      </div><br>
+
+
+      </div> <br>
+
+   
+      <!--##########################################################################################-->
+
+      <div class="col-sm-9">
+        <!--sort by nav bar-->
+        <a href="#!" class="text-reset"> <span class="glyphicon">&#xe012;</span></a href="#!">
+        <a href="#!" class="text-reset"> <span class="glyphicon">&#xe010;</span></a href="#!">
+        <!-- #################################sorting ##########################################-->
+        <div class="col-12 col-md-5">
+          <div class="d-flex flex-wrap">
+            <!-- sorting -->
+            <div class="select-outline position-relative w-100">
+              <select id="sort_by_price" class="mdb-select md-form md-outline">
+                <option value="1">Price: Low to High</option>
+                <option value="2">Price: High to Low</option>
+              </select>
+            </div>
+            <!-- sorting -->
+          </div>
+        </div>
+        <div class="col-12 col-md-4 text-center">
+          <nav aria-label="Page navigation example">
+            <ul class="pagination pagination-circle justify-content-center my=0">
+              <li class="page-item"><a href="#"><span class="glyphicon glyphicon-chevron-left"></span></a>
+              <li class="page-item active"><a class="page-link">1</a></li>
+              <li class="page-item"><a class="page-link">2</a></li>
+              <li class="page-item"><a class="page-link">3</a></li>
+              <li class="page-item"><a href="#"><span class="glyphicon glyphicon-chevron-right"></span></a></li>
+            </ul>
+          </nav>
+        </div>
+      
+        <!---########################Section 1######################################-->
+        <div id="product_list"></div>
+      </div>
+  </div>
+</div>
+
+        <!-- <div class="row text-center"> -->
+          <!-- <div class="col-sm-3"> -->
+            <!-- <div class="thumbnail"> -->
+            <!-- <a href="#"> <img src="image/FLUFF YEAR SLIDE-125.jpg" alt="Paris" width="400" height="300"></a> -->
+            <!-- <p><strong>FLUFF YEAR SLIDE</strong></p> -->
+            <!-- <p>CAD$125 |10 Color</p> -->
+            <!-- <ul class="rating"> -->
+            <!-- <span class="glyphicon glyphicon-star " id="oranger"></span> -->
+            <!-- <span class="glyphicon glyphicon-star" id="oranger"></span> -->
+            <!-- <span class="glyphicon glyphicon-star"id="oranger"></span> -->
+            <!-- <span class="glyphicon glyphicon-star"id="oranger"></span> -->
+            <!-- <span class="glyphicon glyphicon-star"id="oranger"></span>                     -->
+            <!-- </ul> -->
+            <!-- </div>                     -->
+<!--  -->
+          <!-- </div> -->
+<!--  -->
+          <!-- <div class="col-sm-3"> -->
+            <!-- <div class="thumbnail"> -->
+              <!-- <img src="image/oh year-125-10.jpg" alt="Paris" width="400" height="300"> -->
+              <!-- <p><strong>OH YEAR</strong></p> -->
+              <!-- <p>CAD$125 | 9 Color</p> -->
+              <!-- <ul class="rating"> -->
+                <!-- <span class="glyphicon glyphicon-star " id="oranger"></span> -->
+                <!-- <span class="glyphicon glyphicon-star" id="oranger"></span> -->
+                <!-- <span class="glyphicon glyphicon-star" id="oranger"></span> -->
+                <!-- <span class="glyphicon glyphicon-star" id="oranger"></span> -->
+                <!-- <span class="glyphicon glyphicon-star-empty" id="oranger"></span> -->
+              <!-- </ul> -->
+            <!-- </div> -->
+          <!-- </div> -->
+<!--  -->
+<!--  -->
+          <!-- <div class="col-sm-3"> -->
+            <!-- <div class="thumbnail"> -->
+              <!-- <img src="image/cali collage-135-2.webp" alt="Paris" width="400" height="300"> -->
+              <!-- <p><strong>CALI COLLAGE</strong></p> -->
+              <!-- <p>CAD$135 | 2 Color</p> -->
+              <!-- <ul class="rating"> -->
+                <!-- <span class="glyphicon glyphicon-star " id="oranger"></span> -->
+                <!-- <span class="glyphicon glyphicon-star" id="oranger"></span> -->
+                <!-- <span class="glyphicon glyphicon-star" id="oranger"></span> -->
+                <!-- <span class="glyphicon glyphicon-star" id="oranger"></span> -->
+                <!-- <span class="glyphicon glyphicon-star-empty" id="oranger"></span> -->
+              <!-- </ul> -->
+            <!-- </div> -->
+          <!-- </div> -->
+<!--  -->
+          <!-- <div class="col-sm-3"> -->
+            <!-- <div class="thumbnail"> -->
+              <!-- <img src="image/fluff year slide poppy-135-3.jpg" alt="Paris" width="400" height="300"> -->
+              <!-- <p><strong>FLUFF YEAR SLIDE POPPY</strong></p> -->
+              <!-- <p>CAD$135 | 3 Color</p> -->
+              <!-- <ul class="rating"> -->
+                <!-- <span class="glyphicon glyphicon-star " id="oranger"></span> -->
+                <!-- <span class="glyphicon glyphicon-star" id="oranger"></span> -->
+                <!-- <span class="glyphicon glyphicon-star" id="oranger"></span> -->
+                <!-- <span class="glyphicon glyphicon-star" id="oranger"></span> -->
+                <!-- <span class="glyphicon glyphicon-star-empty" id="oranger"></span> -->
+              <!-- </ul> -->
+            <!-- </div> -->
+          <!-- </div> -->
+        <!-- </div> -->
+        <!-- ###############################Section 2###########################################3 -->
+        <!-- <div class="row text-center"> -->
+          <!-- <div class="col-sm-4"> -->
+            <!-- <div class="thumbnail"> -->
+              <!-- <img src="image/adirondack III -295-2.webp" alt="Paris" width="400" height="300"> -->
+              <!-- <p><strong>ADIRONDACK III</strong></p> -->
+              <!-- <p>CAD$295 | 2 Color</p> -->
+              <!-- <ul class="rating"> -->
+                <!-- <span class="glyphicon glyphicon-star " id="oranger"></span> -->
+                <!-- <span class="glyphicon glyphicon-star" id="oranger"></span> -->
+                <!-- <span class="glyphicon glyphicon-star" id="oranger"></span> -->
+                <!-- <span class="glyphicon glyphicon-star" id="oranger"></span> -->
+                <!-- <span class="glyphicon glyphicon-star-empty" id="oranger"></span> -->
+              <!-- </ul> -->
+            <!-- </div> -->
+          <!-- </div> -->
+          <!-- <div class="col-sm-4"> -->
+            <!-- <div class="thumbnail"> -->
+              <!-- <img src="image/classic clear mini-190-6.webp" alt="Paris" width="400" height="300"> -->
+              <!-- <p><strong>Classic clear mini</strong></p> -->
+              <!-- <p>CAD$190 | 6 Color</p> -->
+              <!-- <ul class="rating"> -->
+                <!-- <span class="glyphicon glyphicon-star " id="oranger"></span> -->
+                <!-- <span class="glyphicon glyphicon-star" id="oranger"></span> -->
+                <!-- <span class="glyphicon glyphicon-star" id="oranger"></span> -->
+                <!-- <span class="glyphicon glyphicon-star" id="oranger"></span> -->
+                <!-- <span class="glyphicon glyphicon-star-empty" id="oranger"></span> -->
+              <!-- </ul> -->
+<!--  -->
+            <!-- </div> -->
+          <!-- </div> -->
+<!--  -->
+          <!-- <div class="col-sm-4"> -->
+            <!-- <div class="thumbnail"> -->
+              <!-- <img src="image/bailey button II-275-3.webp" alt="Paris" width="400" height="300"> -->
+              <!-- <p><strong>bailey button II</strong></p> -->
+              <!-- <p>CAD$275 | 3 Color</p> -->
+              <!-- <ul class="rating"> -->
+                <!-- <span class="glyphicon glyphicon-star " id="oranger"></span> -->
+                <!-- <span class="glyphicon glyphicon-star" id="oranger"></span> -->
+                <!-- <span class="glyphicon glyphicon-star" id="oranger"></span> -->
+                <!-- <span class="glyphicon glyphicon-star" id="oranger"></span> -->
+                <!-- <span class="glyphicon glyphicon-star" id="oranger"></span> -->
+              <!-- </ul> -->
+            <!-- </div> -->
+<!--  -->
+          <!-- </div> -->
+        <!-- </div> -->
+        <!-- ################################Section3####################################################3 -->
+        <!-- <div class="row text-center"> -->
+          <!-- <div class="col-sm-3"> -->
+            <!-- <div class="thumbnail"> -->
+              <!-- <a href="#"> <img src="image/Scuffette II-105-2.webp" alt="Paris" width="400" height="300"></a> -->
+              <!-- <p><strong>scuffette II</strong></p> -->
+              <!-- <p>CAD$105 |2 Color</p> -->
+              <!-- <ul class="rating"> -->
+                <!-- <span class="glyphicon glyphicon-star " id="oranger"></span> -->
+                <!-- <span class="glyphicon glyphicon-star" id="oranger"></span> -->
+                <!-- <span class="glyphicon glyphicon-star" id="oranger"></span> -->
+                <!-- <span class="glyphicon glyphicon-star" id="oranger"></span> -->
+                <!-- <span class="glyphicon glyphicon-star" id="oranger"></span> -->
+              <!-- </ul> -->
+            <!-- </div> -->
+          <!-- </div> -->
+          <!-- <div class="col-sm-3"> -->
+            <!-- <div class="thumbnail"> -->
+              <!-- <img src="image/tasman-125-2.jpg" alt="Paris" width="400" height="300"> -->
+              <!-- <p><strong>tasman</strong></p> -->
+              <!-- <p>CAD$125 | 2 Color</p> -->
+              <!-- <ul class="rating"> -->
+                <!-- <span class="glyphicon glyphicon-star " id="oranger"></span> -->
+                <!-- <span class="glyphicon glyphicon-star" id="oranger"></span> -->
+                <!-- <span class="glyphicon glyphicon-star" id="oranger"></span> -->
+                <!-- <span class="glyphicon glyphicon-star" id="oranger"></span> -->
+                <!-- <span class="glyphicon glyphicon-star" id="oranger"></span> -->
+              <!-- </ul> -->
+            <!-- </div> -->
+          <!-- </div> -->
+<!--  -->
+          <!-- <div class="col-sm-3"> -->
+            <!-- <div class="thumbnail"> -->
+              <!-- <img src="image/Ansley blossom-145-2.webp" alt="Paris" width="400" height="300"> -->
+              <!-- <p><strong>ansley blossom</strong></p> -->
+              <!-- <p>CAD$145 | 2 Color</p> -->
+              <!-- <ul class="rating"> -->
+                <!-- <span class="glyphicon glyphicon-star " id="oranger"></span> -->
+                <!-- <span class="glyphicon glyphicon-star" id="oranger"></span> -->
+                <!-- <span class="glyphicon glyphicon-star" id="oranger"></span> -->
+                <!-- <span class="glyphicon glyphicon-star" id="oranger"></span> -->
+                <!-- <span class="glyphicon glyphicon-star-empty" id="oranger"></span> -->
+              <!-- </ul> -->
+            <!-- </div> -->
+          <!-- </div> -->
+          <!-- <div class="col-sm-3"> -->
+            <!-- <div class="thumbnail"> -->
+              <!-- <img src="image/coquette-150-3.webp" alt="Paris" width="400" height="300"> -->
+              <!-- <p><strong>coquette</strong></p> -->
+              <!-- <p>CAD$150 | 3 Color</p> -->
+              <!-- <ul class="rating"> -->
+                <!-- <span class="glyphicon glyphicon-star " id="oranger"></span> -->
+                <!-- <span class="glyphicon glyphicon-star" id="oranger"></span> -->
+                <!-- <span class="glyphicon glyphicon-star" id="oranger"></span> -->
+                <!-- <span class="glyphicon glyphicon-star" id="oranger"></span> -->
+                <!-- <span class="glyphicon glyphicon-star-empty" id="oranger"></span> -->
+              <!-- </ul> -->
+            <!-- </div> -->
+          <!-- </div> -->
+        <!-- </div> -->
+<!--  -->
+      <!-- </div><br> -->
+
+<hr>
+      <!--############################################footer########################################-->
+
+      <!--footer2-->
+      <div class="footer-copyright text-center py-3">@author:Suya Liu & Wen Tao
+        <a href="https://mdbootstrap.com/"> liu00525@algonquinlive.com</a>
+      </div>
+
+</body>
+
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>WLD Company</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="js/product.js" defer></script>
+</head>
+<body>
+
+    <!--#########################nava bar#########################################-->
+ <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!--logo-->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+              </button>
+             
+              <a class="navbar-brand" href="index.html" style="Color:red;">LMD STORE</a>
+         </div>
+         <!--nav bar with dropdown-->
+         <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav" >
+            <li class=""><a href="index.html">Home</a></li>
+            <li class="dropdown active"><a class="dropdown-toggle" data-toggle="dropdown" href="categroy.html">Catalogue <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="catalogue.html">Women</a></li>
+                <li><a href="catalogue.html">Men</a></li>
+                <li><a href="catalogue.html">Kids</a></li>
+              </ul>
+            </li>
+            <li class=""><a href="catalogue.html">Sale</a></li>
+          </ul>       
+
+           <!--sing in sign up-->
+           
+            <ul class="nav navbar-nav navbar-right">
+           <li><a href="cart.html"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
+           <li><a href="signin.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+           <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+             </ul>
+          <!--search icon-->
+           <form class="navbar-form navbar-right" action="/action_page.php">
+             <div class="input-group">
+               <input type="text" class="form-control" placeholder="Search" name="search">
+               <div class="input-group-btn">
+                <button class="btn btn-default" type="submit">
+                  <i class="glyphicon glyphicon-search"></i>
+                 </button>
+                </div>
+                </div>
+              </form>     
+         </div>
+        </div>
+     </nav><br><br>
+    
+     <!-- section here-->                                
+        <div class="container-fluid">             
+          <div class="row " >
+              <div class="col-sm-9">
+              <img src="image/1-product-detail.webp" alt="detail" style="width: 100%;">
+            </div>           
+            <div class="col-sm-3">
+                <div class="thumbnail">             
+                  <h2>ADIRONDACK III BOOT</h2>
+                  <ul class="rating" style="padding-left: 0;">           
+                   <span class="view-stars pull-right">
+                     <span class="glyphicon glyphicon-star star-color"></span>
+                     <span class="glyphicon glyphicon-star star-color"></span>
+                     <span class="glyphicon glyphicon-star star-color"></span>
+                     <span class="glyphicon glyphicon-star star-color"></span>
+                     <span class="glyphicon glyphicon-star star-color half" ></span>
+                   </span>
+                    <span class="view-stats">981 views</span>
+                  </ul>
+
+                  <h3 id="total_price"> CAD$ 125 </h3>
+                  <hr>
+                  <p>Quantity</p>
+                  <form class="form-inline">
+                  <div class="input-group">
+                    <div class="input-group-btn">
+                      <button type="button" class="btn button-gry" onclick="add_one()">
+                        <span class="glyphicon">&#x2b;</span>
+                      </button>
+                    </div>
+                    <input type="text" class="form-control" size="10" placeholder="1" id="quantity" required>
+                    <div class="input-group-btn">
+                      <button type="button" class="btn button-gry" onclick="minus_one()">
+                        <span class="glyphicon">&#x2212;</span>
+                      </button>
+                    </div>
+                  </div>
+                  </form> <br>
+                  <p>Size</p>
+                  <div class="checkbox">
+                  <span class="choice-details">
+                     <label class="checkbox-inline">
+                       <input type="checkbox" value="" checked>Small
+                     </label>
+                     <label class="checkbox-inline">
+                       <input type="checkbox" value="">Media
+                     </label>
+                     <label class="checkbox-inline">
+                      <input type="checkbox" value="" >Large
+                    </label>
+                   </span>
+                  </div>
+                  <a href="#" class="btn btn-primary" role="button">Buy Now</a>
+                  <a href="#" class="btn btn-info btn-danger" role="button">
+                  <span class="glyphicon glyphicon-shopping-cart"></span> Shopping Cart</a>
+                  <hr>
+                  <h6> <b> Free Shipping on orders CAD $195+. <br>
+                    Free Returns. </b></h6>
+              </div>
+            </div>
+          </div> 
+        </div>
+        <hr>
+
+        <!----#######################product description####################-->
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-8">
+              <h2>Details</h2>
+              <h4><i> Model: 1095141</i></h4>      
+              <p class="product-detail">For all your winter needs, 
+                we updated our best seller to perform in even harsher conditions, 
+                with a range of high-tech benefits and a new fit created specifically for movement. 
+                The waterproof Adirondack III features an outsole designed to stay flexible in freezing temps, extra warming insulation, 
+                a cushioning insole, and a higher cold-weather rating of -32˚C. Ideal for the mountains, the city, or anywhere in between, 
+                this stylish boot will bring you almost anywhere.
+                This product was made in a factory that supports women in our supply chain with the help of HERproject, 
+                a collaborative initiative that creates partnerships with brands like ours to empower 
+                and educate women in the workplace.</p>
+              
+            </div>
+            <div class="col-sm-4">
+              <span class="glyphicon glyphicon-signal logo"  style="font-size: 20rem;"></span>
+                        
+            </div>
+          </div>
+        </div> <hr>
+                
+
+<!--footer2-->
+<div class="footer-copyright text-center py-3">@author:Suya Liu & Deng Wei & Wen Tao
+    <a href="https://mdbootstrap.com/"> liu00525@algonquinlive.com</a>
+  </div>
+
+</body>
+</html>
